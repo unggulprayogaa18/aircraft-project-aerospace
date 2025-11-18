@@ -18,6 +18,7 @@ Ensure you have the following installed:
 ### Steps to Run Locally
 
 1. Backend Service
+
 The backend is responsible for data extraction, processing, and serving updates.
 
 2. Navigate to the `backend/` directory.
