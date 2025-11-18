@@ -4,7 +4,7 @@
 
 #### This is a lightweight, full-stack application designed to retrieve live aircraft data from tx.ozrunways.com and display it on a map-based web interface.
 
-## Installation and Local Run Instructions
+# Installation and Local Run Instructions
 
 The application consists of two decoupled components: the Backend and the Frontend.
 
