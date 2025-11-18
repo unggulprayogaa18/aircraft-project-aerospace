@@ -24,14 +24,15 @@ The backend is responsible for data extraction, processing, and serving updates.
 
 Install dependencies:
 
-bash
+   ```bash
    npm install
-   
+   ```
+
 3.Run the backend service:
 
-Bash
-npm start
-
+   ```Bash
+   npm start
+   ```
 This service typically runs on `http://localhost:8080` (based on common local/Cloud Run configurations).
 
 2. Frontend UI
@@ -41,12 +42,14 @@ This service typically runs on `http://localhost:8080` (based on common local/Cl
 
 Install dependencies:
 
-Bash
-npm install
+   ```Bash
+   npm install
+   ```
 
 Run the frontend application in development mode:
 
-Bash
-npm run dev
+   ```Bash
+   npm run dev
+   ```
 
 The application will open in your browser, usually at `http://localhost:5173`. Ensure the backend service is running before accessing the frontend.
