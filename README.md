@@ -11,8 +11,8 @@ The application consists of two decoupled components: the Backend and the Fronte
 ### Prerequisites
 Ensure you have the following installed:
 
-Node.js (LTS version recommended)
-npm or Yarn
+• Node.js (LTS version recommended)
+• npm or Yarn
 
 ### Steps to Run Locally
 
