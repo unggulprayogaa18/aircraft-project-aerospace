@@ -1,5 +1,7 @@
 # Aircraft Tracker UI 
 
+![Logo](foto.png)
+
 ## This is a lightweight, full-stack application designed to retrieve live aircraft data from tx.ozrunways.com and display it on a map-based web interface.
 
 ### Installation and Local Run Instructions
