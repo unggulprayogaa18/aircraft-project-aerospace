@@ -24,12 +24,12 @@ The backend is responsible for data extraction, processing, and serving updates.
 
 Install dependencies:
 
-```bash
+bash
    npm install
    
 3.Run the backend service:
 
-```Bash
+Bash
 npm start
 
 This service typically runs on `http://localhost:8080` (based on common local/Cloud Run configurations).
