@@ -17,7 +17,7 @@ Ensure you have the following installed:
 
 ### Steps to Run Locally
 
-1. Backend Service
+### 1. Backend Service
 
 The backend is responsible for data extraction, processing, and serving updates.
 
@@ -36,7 +36,7 @@ The backend is responsible for data extraction, processing, and serving updates.
    ```
 This service typically runs on `http://localhost:8080` (based on common local/Cloud Run configurations).
 
-2. Frontend UI
+### 2. Frontend UI
 
    The frontend is the React-based user interface displaying the map and aircraft data.
    Open a new terminal and navigate to the `frontend/` directory.
