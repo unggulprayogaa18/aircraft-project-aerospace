@@ -123,3 +123,9 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 | Google Cloud Run       | The primary hosting environment for the backend. It pulls the latest Docker image from Artifact Registry and deploys it as a scalable, serverless service.                           |
 | Google Cloud Logging   | Used to monitor and debug both the Cloud Build process and the runtime execution of the Cloud Run service.                                                                            |
 | Vercel                 | Provides automated hosting and Continuous Deployment (CD) for the decoupled React frontend application.                                                                               |
+
+## Live Application URL
+
+#### The publicly accessible, deployed frontend application is available at:
+
+[Aircraft Tracker Frontend](https://aircraft-frontend.vercel.app/)
