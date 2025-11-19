@@ -60,7 +60,7 @@ The application will open in your browser, usually at `http://localhost:5173`. E
 
 The core goal of this project was to build a stable and maintainable application quickly. To achieve this, we made specific choices regarding the structure (Architecture), the tools (Technology Stack), and how we tackle the main problem (Data Extraction).
 
-1. Architectural Choice: Decoupled Microservices
+**1. Architectural Choice: Decoupled Microservices
 We chose a Decoupled Microservice Architecture. This simply means we built the application as two separate, independent parts:
 
    • The Brain (Backend): This part handles all the difficult, invisible work—like getting data from the external source.
@@ -68,3 +68,13 @@ We chose a Decoupled Microservice Architecture. This simply means we built the a
    • The Face (Frontend): This part handles everything the user sees and interacts with—the map, the aircraft icons, and the popups.
 
 Why this choice? Separating the two ensures that if there's a problem with the map display (Frontend), the data collection (Backend) keeps running, and vice versa. It makes the entire application more stable, easier to develop, and easier to scale because we can upgrade or troubleshoot each part independently.
+
+**2. Technology Stack Selection
+We selected technologies that are modern, fast, and excellent for their specific jobs.
+
+| Component          | Technology        | Rationale (Why We Chose It)                                                                                                                                                                                                 |
+|--------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Backend            | Node.js           | Node.js is incredibly efficient for tasks that involve waiting for data (like polling an external website). It uses an asynchronous (non-blocking) model, meaning it can handle many data requests simultaneously without slowing down the entire system. |
+| Backend & Frontend | TypeScript (TS)   | TS is an enhanced version of JavaScript that adds strict data rules (typing). This is like adding safety checks to the code. By defining what type of data (number, string, object) each variable must hold, we catch errors during development instead of during runtime, resulting in a much more stable and bug-free product.|
+| Frontend           | React (via Vite)  | React is the industry standard for building complex, interactive user interfaces. It uses a component-based structure, allowing us to build separate, reusable blocks of UI (like the AircraftMap component or the individual aircraft icon), making the code cleaner and easier to manage. |
+
