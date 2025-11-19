@@ -60,7 +60,7 @@ The application will open in your browser, usually at `http://localhost:5173`. E
 
 The core goal of this project was to build a stable and maintainable application quickly. To achieve this, we made specific choices regarding the structure (Architecture), the tools (Technology Stack), and how we tackle the main problem (Data Extraction).
 
-**1. Architectural Choice: Decoupled Microservices
+1. Architectural Choice: Decoupled Microservices
 We chose a Decoupled Microservice Architecture. This simply means we built the application as two separate, independent parts:
 
    • The Brain (Backend): This part handles all the difficult, invisible work—like getting data from the external source.
