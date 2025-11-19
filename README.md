@@ -72,7 +72,7 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 **2. Technology Stack Selection
 We selected technologies that are modern, fast, and excellent for their specific jobs.
 
-| Component          | Technology        | Rationale (Why We Chose It)                                                                                                                                                                                                 |
+| Component          | Technology        | Rationale (Why I Chose It)                                                                                                                                                                                                 |
 |--------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Backend            | Node.js           | Node.js is incredibly efficient for tasks that involve waiting for data (like polling an external website). It uses an asynchronous (non-blocking) model, meaning it can handle many data requests simultaneously without slowing down the entire system. |
 | Backend & Frontend | TypeScript (TS)   | TS is an enhanced version of JavaScript that adds strict data rules (typing). This is like adding safety checks to the code. By defining what type of data (number, string, object) each variable must hold, we catch errors during development instead of during runtime, resulting in a much more stable and bug-free product.|
