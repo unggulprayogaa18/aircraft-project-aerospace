@@ -29,7 +29,7 @@ The backend is responsible for data extraction, processing, and serving updates.
    npm install
    ```
 
-3.Run the backend service:
+3. Run the backend service:
 
    ```Bash
    npm start
