@@ -11,9 +11,9 @@ The application consists of two decoupled components: the Backend and the Fronte
 ### Prerequisites
 Ensure you have the following installed:
 
-• Node.js (LTS version recommended)
+- Node.js (LTS version recommended)
 
-• npm or Yarn
+- npm or Yarn
 
 ## Steps to Run Locally
 
@@ -64,9 +64,9 @@ The core goal of this project was to build a stable and maintainable application
 
 #### We chose a Decoupled Microservice Architecture. This simply means we built the application as two separate, independent parts:
 
-   • The Brain (Backend): This part handles all the difficult, invisible work—like getting data from the external source.
+   - The Brain (Backend): This part handles all the difficult, invisible work—like getting data from the external source.
    
-   • The Face (Frontend): This part handles everything the user sees and interacts with—the map, the aircraft icons, and the popups.
+   - The Face (Frontend): This part handles everything the user sees and interacts with—the map, the aircraft icons, and the popups.
 
 Why this choice? Separating the two ensures that if there's a problem with the map display (Frontend), the data collection (Backend) keeps running, and vice versa. It makes the entire application more stable, easier to develop, and easier to scale because we can upgrade or troubleshoot each part independently.
 
@@ -94,18 +94,18 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 
    #### Frontend Hosting (Vercel):
    
- • Vercel is optimized for modern frontend frameworks like React.
+ - Vercel is optimized for modern frontend frameworks like React.
  
- • It provides seamless Continuous Deployment (CD), automatically updating the website whenever changes are pushed to GitHub. This speeds up the development and testing process.
+ - It provides seamless Continuous Deployment (CD), automatically updating the website whenever changes are pushed to GitHub. This speeds up the development and testing process.
 
 ### 4. Data Extraction Method
 
 #### Since the live aircraft data source (`tx.ozrunways.com`) does not provide a public API , the core technical challenge was discovery (Phase 1).
 
- • Network Traffic Analysis: We acted like a detective, using the browser's Developer Tools to observe all the hidden requests the website makes as it loads data.
+ - Network Traffic Analysis: We acted like a detective, using the browser's Developer Tools to observe all the hidden requests the website makes as it loads data.
       
-  • Endpoint Identification: We successfully identified the specific, internal JSON endpoint that the website uses to get the raw aircraft position data in real-time.
+ - Endpoint Identification: We successfully identified the specific, internal JSON endpoint that the website uses to get the raw aircraft position data in real-time.
       
- • Polling Mechanism: The backend service then implemented a polling system, where it sends a request to that discovered endpoint periodically (every few seconds) to fetch the latest data.
+ - Polling Mechanism: The backend service then implemented a polling system, where it sends a request to that discovered endpoint periodically (every few seconds) to fetch the latest data.
       
- • Processing: The raw data received is often large or complex. The backend performs a crucial processing and transformation step, stripping away unnecessary information and formatting it into a minimal, lightweight structure that the frontend can efficiently consume and display.
+ - Processing: The raw data received is often large or complex. The backend performs a crucial processing and transformation step, stripping away unnecessary information and formatting it into a minimal, lightweight structure that the frontend can efficiently consume and display.
