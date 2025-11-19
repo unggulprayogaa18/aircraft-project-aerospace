@@ -63,8 +63,8 @@ The core goal of this project was to build a stable and maintainable application
 1. Architectural Choice: Decoupled Microservices
 We chose a Decoupled Microservice Architecture. This simply means we built the application as two separate, independent parts:
 
-The Brain (Backend): This part handles all the difficult, invisible work—like getting data from the external source.
-
-The Face (Frontend): This part handles everything the user sees and interacts with—the map, the aircraft icons, and the popups.
+   •The Brain (Backend): This part handles all the difficult, invisible work—like getting data from the external source.
+   
+   •The Face (Frontend): This part handles everything the user sees and interacts with—the map, the aircraft icons, and the popups.
 
 Why this choice? Separating the two ensures that if there's a problem with the map display (Frontend), the data collection (Backend) keeps running, and vice versa. It makes the entire application more stable, easier to develop, and easier to scale because we can upgrade or troubleshoot each part independently.
