@@ -82,7 +82,7 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 
 ### 3. Architecture and Hosting Strategy
 
-#### We chose specialized hosting providers for each part to get the best performance and maintainability.
+ We chose specialized hosting providers for each part to get the best performance and maintainability.
 
    #### Backend Hosting (Google Cloud Run):
    
