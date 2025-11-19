@@ -130,6 +130,9 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 
 [Aircraft Tracker Frontend](https://aircraft-frontend.vercel.app/)
 
+[Demo Video and Cloud Configuration Documentation]([https://aircraft-frontend.vercel.app/](https://drive.google.com/drive/folders/1ATMlMqAPn570QdO8J8WXjGH_n4n45i4w?usp=sharing))
+
+
 > **Note:** Please wait a few moments when opening the application — the map and real-time aircraft data may take some time to load.
 
 # Explanation For Fiture
