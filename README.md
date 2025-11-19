@@ -109,3 +109,17 @@ Why this choice? Separating the two ensures that if there's a problem with the m
  - Polling Mechanism: The backend service then implemented a polling system, where it sends a request to that discovered endpoint periodically (every few seconds) to fetch the latest data.
       
  - Processing: The raw data received is often large or complex. The backend performs a crucial processing and transformation step, stripping away unnecessary information and formatting it into a minimal, lightweight structure that the frontend can efficiently consume and display.
+   
+## Deployment Architecture Overview
+
+#### The backend deployment pipeline leverages Google Cloud services for automated Continuous Delivery (CD):
+
+| Component / Service   | Role in the Project                                                                                                                                                                  |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GitHub                 | Stores the source code and acts as the trigger source for the automation pipeline.                                                                                                   |
+| Google Cloud Build     | Automatically builds and containerizes (Dockerizes) the Node.js backend whenever changes are pushed to the repository.                                                               |
+| Artifact Registry      | Stores the finalized Docker images from Cloud Build and serves as the secure container image repository.                                                                              |
+| Google Cloud IAM       | Manages permissions, including the dedicated Service Account (cloud-build-deployer) that ensures Cloud Build has the necessary rights to deploy and manage resources.               |
+| Google Cloud Run       | The primary hosting environment for the backend. It pulls the latest Docker image from Artifact Registry and deploys it as a scalable, serverless service.                           |
+| Google Cloud Logging   | Used to monitor and debug both the Cloud Build process and the runtime execution of the Cloud Run service.                                                                            |
+| Vercel                 | Provides automated hosting and Continuous Deployment (CD) for the decoupled React frontend application.                                                                               |
