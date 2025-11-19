@@ -21,9 +21,9 @@ Ensure you have the following installed:
 
 The backend is responsible for data extraction, processing, and serving updates.
 
-2. Navigate to the `backend/` directory.
+1. Navigate to the `backend/` directory.
 
-Install dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
