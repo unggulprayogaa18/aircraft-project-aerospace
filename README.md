@@ -132,7 +132,7 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 
 > **Note:** Please wait a few moments when opening the application — the map and real-time aircraft data may take some time to load.
 
-#Explanation For Fiture
+# Explanation For Fiture
 
 ## Custom Filtering: Min Altitude and Min Speed
 
