@@ -86,11 +86,11 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 
    Backend Hosting (Google Cloud Run):
    
- • **Since the backend is containerized (packaged with Docker), Google Cloud Run is the perfect fit.**
+   **  • Since the backend is containerized (packaged with Docker), Google Cloud Run is the perfect fit.**
  
- • It is a fully managed, serverless platform. This means we don't have to worry about maintaining virtual machines or servers; Google handles the infrastructure.
+   **  • It is a fully managed, serverless platform. This means we don't have to worry about maintaining virtual machines or servers; Google handles the infrastructure.**
  
- • It can scale from zero (costing nothing when not in use) to a massive capacity instantly as needed, ensuring the service is always available but only costs money when actively fetching data.
+   **  • It can scale from zero (costing nothing when not in use) to a massive capacity instantly as needed, ensuring the service is always available but only costs money when actively fetching data.**
 
    Frontend Hosting (Vercel):
    
