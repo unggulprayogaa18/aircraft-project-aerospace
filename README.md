@@ -81,7 +81,7 @@ We selected technologies that are modern, fast, and excellent for their specific
 3. Architecture and Hosting Strategy
 We chose specialized hosting providers for each part to get the best performance and maintainability.
 
-   • Backend Hosting (Google Cloud Run):
+   Backend Hosting (Google Cloud Run):
    
       • Since the backend is containerized (packaged with Docker), Google Cloud Run is the perfect fit.
        
@@ -89,7 +89,7 @@ We chose specialized hosting providers for each part to get the best performance
       
       • It can scale from zero (costing nothing when not in use) to a massive capacity instantly as needed, ensuring the service is always available but only costs money when actively fetching data.
 
-   • Frontend Hosting (Vercel):
+   Frontend Hosting (Vercel):
    
       • Vercel is optimized for modern frontend frameworks like React.
       
