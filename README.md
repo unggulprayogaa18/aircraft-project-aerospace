@@ -136,6 +136,6 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 
 ## Custom Filtering: Min Altitude and Min Speed
 
-![MinAltitude and MinSpeed](/document-foto/MinAltitudeandMinSpeed.jpg.jpg)
+![MinAltitude and MinSpeed](document-foto/MinAltitudeandMinSpeed.jpg)
 
 > **Note:** These two custom filters are designed to provide the user with advanced visual control over the displayed air traffic data. The Min Altitude filter enables the user to set a minimum height threshold, effectively filtering out low-flying or ground-based aircraft to help focus the map exclusively on traffic operating at cruising altitudes. Similarly, the Min Speed filter allows the user to set a minimum velocity, which efficiently filters out stationary or taxiing aircraft on the ground, thereby ensuring the visualization focuses only on flights that are actively moving at a significant speed.
