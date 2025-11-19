@@ -81,7 +81,7 @@ We selected technologies that are modern, fast, and excellent for their specific
 3. Architecture and Hosting Strategy
 We chose specialized hosting providers for each part to get the best performance and maintainability.
 
-   • Backend Hosting (Google Cloud Run):
+• Backend Hosting (Google Cloud Run):
    
       • Since the backend is containerized (packaged with Docker), Google Cloud Run is the perfect fit.
    
@@ -89,7 +89,7 @@ We chose specialized hosting providers for each part to get the best performance
    
       • It can scale from zero (costing nothing when not in use) to a massive capacity instantly as needed, ensuring the service is always available but only costs money when actively fetching data.
 
-   • Frontend Hosting (Vercel):
+• Frontend Hosting (Vercel):
    
       • Vercel is optimized for modern frontend frameworks like React.
    
@@ -98,10 +98,10 @@ We chose specialized hosting providers for each part to get the best performance
 4. Data Extraction Method
 Since the live aircraft data source (`tx.ozrunways.com`) does not provide a public API , the core technical challenge was discovery (Phase 1).
 
-   1. Network Traffic Analysis: We acted like a detective, using the browser's Developer Tools to observe all the hidden requests the website makes as it loads data.
-   
-   2. Endpoint Identification: We successfully identified the specific, internal JSON endpoint that the website uses to get the raw aircraft position data in real-time.
-   
-   3. Polling Mechanism: The backend service then implemented a polling system, where it sends a request to that discovered endpoint periodically (every few seconds) to fetch the latest data.
-   
-   4. Processing: The raw data received is often large or complex. The backend performs a crucial processing and transformation step, stripping away unnecessary information and formatting it into a minimal, lightweight structure that the frontend can efficiently consume and display.
+      • Network Traffic Analysis: We acted like a detective, using the browser's Developer Tools to observe all the hidden requests the website makes as it loads data.
+      
+      • Endpoint Identification: We successfully identified the specific, internal JSON endpoint that the website uses to get the raw aircraft position data in real-time.
+      
+      • Polling Mechanism: The backend service then implemented a polling system, where it sends a request to that discovered endpoint periodically (every few seconds) to fetch the latest data.
+      
+      • Processing: The raw data received is often large or complex. The backend performs a crucial processing and transformation step, stripping away unnecessary information and formatting it into a minimal, lightweight structure that the frontend can efficiently consume and display.
