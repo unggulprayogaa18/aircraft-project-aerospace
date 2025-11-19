@@ -139,3 +139,23 @@ Why this choice? Separating the two ensures that if there's a problem with the m
 ![MinAltitude and MinSpeed](document-foto/MinAltitudeandMinSpeed.jpg)
 
 > **Note:** These two custom filters are designed to provide the user with advanced visual control over the displayed air traffic data. The Min Altitude filter enables the user to set a minimum height threshold, effectively filtering out low-flying or ground-based aircraft to help focus the map exclusively on traffic operating at cruising altitudes. Similarly, the Min Speed filter allows the user to set a minimum velocity, which efficiently filters out stationary or taxiing aircraft on the ground, thereby ensuring the visualization focuses only on flights that are actively moving at a significant speed.
+
+## Custom Filtering: Min Altitude and Min Speed
+
+![Map Layer Selection Feature](document-foto/MapLayerSelectionFeature.jpg)
+
+> **Note:** The application provides a feature for advanced visualization control by allowing the user to select different map layers. This allows the user to switch the background map context from various providers like Google Satellite, Esri Topographic, or standard OpenStreetMap layers . This flexibility ensures the user can adapt the map view to their monitoring needs, whether viewing terrain and elevation data with the Topographic layer or using a basic Street Map for clear location awareness.
+
+## Custom Filtering: Min Altitude and Min Speed
+
+![Traffic Status Filter](document-foto/TrafficStatusFilter.jpg)
+
+> **Note:** The application's control panel provides immediate visual filtering through two prominent buttons for managing aircraft based on their current status. The In Air (Blue Button) displays the current count of aircraft actively flying in the monitored area (e.g., 288 in the image). Users can toggle this filter ON/OFF to quickly hide all airborne traffic, which enables focusing exclusively on ground movements if the On Ground filter is simultaneously active. Conversely, the On Ground (Green Button) displays the current count of aircraft that are stationary, taxiing, or otherwise located on the ground (e.g., 6 in the image). Users can toggle this filter ON/OFF to hide all ground traffic, ensuring the map visualization focuses exclusively on flights that are currently airborne.
+
+## Custom Filtering: Min Altitude and Min Speed
+
+![Flight Path Visualization](document-foto/trackingline-trackingdottedline.jpg)
+
+> **Note:** When an aircraft icon is selected, the application displays two distinct lines to provide a comprehensive understanding of its movement. The Tracking Solid Line (typically blue) represents the past flight path, connecting historical position data points to show the route the aircraft has already traversed. Conversely, the Tracking Dotted Line (often a thinner, dashed line) projects forward from the aircraft's current position, indicating the estimated future flight path or current heading based on its immediate velocity and direction. These two visualization elements work together to give the user both the context of the flight's history and its anticipated direction of travel.
+
+Furthermore, the aircraft icon itself rotates dynamically on the map. This rotation is directly calculated from the heading data received from the API, ensuring the icon is constantly oriented to match the aircraft's real-life direction of travel. This feature significantly enhances the realism and intuitive understanding of the live traffic visualization.
